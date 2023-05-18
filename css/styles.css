@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+form {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0px 8px 1px rgba(11, 11, 11, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input {
+  width: 100%;
+  line-height: 3.1;
+  border-radius: 6px;
+  padding-left: 1rem;
+}
+form input,
+form .input-control.success input {
+  border: solid 1px #dddddd;
+}
+form input::-moz-placeholder {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+form input::placeholder {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+form input:focus {
+  outline: none;
+  border: solid 1px black;
+}
+form .input-control.error input {
+  border: solid 2px hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+  background-image: url(./img/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+}
+form input[type=submit] {
+  background-color: hsl(154, 59%, 51%);
+  border: solid 1px hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  box-shadow: 0px 5px 0px #32b981;
+  line-height: 2;
+  padding: 0.75rem 0 0.35rem 0;
+}
+form input[type=submit]:hover,
+form input[type=submit]:active {
+  cursor: pointer;
+}
+form input[type=submit]:active {
+  border: solid 1px #77e2b4;
+  background-color: #77e2b4;
+}
+form .input-control .error-msg {
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  text-align: right;
+  margin-top: 6px;
+}
+form p {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+  padding: 0 1rem;
+}
+form p a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+}
+form .thankyou-msg p {
+  color: hsl(249, 10%, 26%);
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url('/img/bg-intro-desktop.png');
+  line-height: 1.6;
+}
+
+.inner-container {
+  padding: 0 1rem;
+}
+
+.left-section {
+  padding: 5rem 0;
+  text-align: center;
+}
+.left-section h1,
+.left-section p {
+  color: #fff;
+  padding: 0 1rem;
+}
+.left-section h1 {
+  margin-bottom: 1rem;
+}
+
+.right-section .promo-btn {
+  color: #fff;
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem 60px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 8px 1px rgba(11, 11, 11, 0.2);
+  margin-bottom: 24px;
+}
+.right-section .promo-btn .bold-txt {
+  font-weight: 500;
+}
+
+footer {
+  margin: 2rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1150px) {
+  section {
+    width: 1110px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+  }
+  .left-section {
+    width: 49%;
+    text-align: left;
+  }
+  .left-section h1 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+  .right-section {
+    width: 49%;
+  }
+  .right-section form {
+    padding: 40px;
+  }
+  footer {
+    position: absolute;
+    bottom: 1px;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}/*# sourceMappingURL=styles.css.map */

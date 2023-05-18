@@ -1,0 +1,18 @@
+//primary colours
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+//acent colour
+$blue: hsl(248, 32%, 49%);
+
+//neutral colours
+$darkblue: hsl(249, 10%, 26%);
+$greyblue: hsl(246, 25%, 77%);
+$darkgrey: #444444;
+$ltgrey: #dddddd;
+
+//typography
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+$base-font: 'Poppins', sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 400;

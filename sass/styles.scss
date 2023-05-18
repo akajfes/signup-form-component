@@ -1,0 +1,112 @@
+@import "variables", "reset", "form", "mediaqueries";
+
+body {
+    background-color: $red;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    background-image: url(img/bg-intro-mobile.png);
+    line-height: 1.6;
+}
+
+// + + + main + + +
+.inner-container {
+    padding: 0 1rem;
+}
+
+
+// + + + left section + + +
+.left-section {
+    padding: 5rem 0;
+    text-align: center;
+
+    h1,
+    p {
+    color: #fff;
+    padding: 0 1rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+// + + + right section + + +
+.right-section {
+    .promo-btn {
+        .bold-txt {
+            font-weight: 500;
+        }
+        color: #fff;
+        background-color: $blue;
+        padding: 1rem 60px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0px 8px 1px rgba(11, 11, 11, 0.2);
+        margin-bottom: 24px;
+    }
+}
+
+
+// + + + footer + + +
+footer {
+    margin: 2rem 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media (min-width: 1150px) {
+    main {
+        position: static;
+    }
+
+    section {
+        width: 1110px;
+        position: absolute;
+        top: 50%; 
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .left-section {
+        width: 49%;
+        text-align: left;
+
+        h1 {
+            font-size: 50px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .right-section {
+        width: 49%;
+
+        form {
+            padding: 40px;
+            
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 1px; 
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+}
