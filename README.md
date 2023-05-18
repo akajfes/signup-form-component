@@ -61,6 +61,5 @@ I want to continue to learn how to use Sass, but I want to use NPM to watch and 
 
 ## Author
 
-- Tumblr - [orion-poka-chip](https://orion-poka-chip.tumblr.com/)
 - Frontend Mentor - [@akajfes](https://www.frontendmentor.io/profile/akajfes)
 - GitHub - [@akajfes](https://github.com/akajfes)
