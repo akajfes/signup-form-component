@@ -168,7 +168,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-image: url('/img/bg-intro-desktop.png');
+  background-image: url('/img/bg-intro-mobile.png');
   line-height: 1.6;
 }
 
@@ -215,6 +215,9 @@ footer {
 }
 
 @media (min-width: 1150px) {
+    body {
+        background-image: url('/img/bg-intro-desktop.png');
+      }
   section {
     width: 1110px;
     position: absolute;
